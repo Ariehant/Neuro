@@ -1,23 +1,28 @@
 {
   "name": "neuro",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "lint": "tsc -b --noEmit"
+    "typecheck": "tsc -b --noEmit"
   },
   "dependencies": {
     "@xyflow/react": "^12.3.5",
+    "dompurify": "^3.2.3",
     "html-to-image": "^1.11.11",
+    "idb-keyval": "^6.2.1",
+    "jspdf": "^2.5.2",
+    "marked": "^15.0.4",
     "nanoid": "^5.0.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "zustand": "^4.5.5"
   },
   "devDependencies": {
+    "@types/dompurify": "^3.0.5",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",
@@ -25,6 +30,7 @@
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.15",
     "typescript": "^5.6.3",
-    "vite": "^5.4.11"
+    "vite": "^5.4.11",
+    "vite-plugin-pwa": "^0.21.1"
   }
 }
